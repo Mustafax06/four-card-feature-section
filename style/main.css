@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    font-size: 15px;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.container {
+    background-color: white;
+    padding: 100px 0;
+    margin: 100px;
+    border-radius: 12px;
+    /* Looks better with the radius. I guess :P */
+}
+
+.card-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.header {
+    text-align: center;
+    width: 35%;
+    margin: auto;
+}
+
+.heading-1 {
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+.heading-2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.sub-heading {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 5% 0 12% 0;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-header {
+    margin: 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 280px;
+    height: 200px;
+    margin: 32px 16px;
+    position: relative;
+    border-radius: 4px;
+}
+
+.card-content {
+    padding: 0 16px;
+    font-size: 12px;
+    opacity: .8;
+}
+
+.card-icon {
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
+}
+
+.card-cyan {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.card-red {
+    border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card-blue {
+    border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.card-orange {
+    border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+footer {
+    text-align: center;
+    color: #363548;
+}
+
+a:link {
+    color: cornflowerblue;
+}
+
+a:visited {
+    color: rgb(142, 192, 94, 0.5);
+}
+
+.dark-text {
+    color: #363548;
+}
+
+.light-dark-text {
+    color: #5F6769 !important;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        width: 375px;
+        font-size: 12px;
+        margin: 0;
+        font-family: 'Poppins';
+    }
+    .container {
+        margin: 0;
+    }
+    .top-info-container {
+        width: 80%;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19)
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    .vertical-cards {
+        display: inherit;
+        flex-direction: column;
+    }
+}
